@@ -1,0 +1,135 @@
+/* BAGNARD */
+@font-face {
+    font-family : Bagnard;
+    src : url(/assets/fonts/Bagnard.otf) format('opentype');
+    font-display : swap;
+}
+
+/* AILERON */
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-Thin.otf);
+    font-display : swap;
+    font-weight : 100;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-ThinItalic.otf);
+    font-display : swap;
+    font-weight : 100;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-UltraLight.otf);
+    font-display : swap;
+    font-weight : 200;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-UltraLightItalic.otf);
+    font-display : swap;
+    font-weight : 200;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-Light.otf);
+    font-display : swap;
+    font-weight : 300;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-LightItalic.otf);
+    font-display : swap;
+    font-weight : 300;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-Regular.otf);
+    font-display : swap;
+    font-weight : 400;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-RegularItalic.otf);
+    font-display : swap;
+    font-weight : 400;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-SemiBold.otf);
+    font-display : swap;
+    font-weight : 600;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-SemiBoldItalic.otf);
+    font-display : swap;
+    font-weight : 600;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-Bold.otf);
+    font-display : swap;
+    font-weight : 700;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-BoldItalic.otf);
+    font-display : swap;
+    font-weight : 700;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-Heavy.otf);
+    font-display : swap;
+    font-weight : 800;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-HeavyItalic.otf);
+    font-display : swap;
+    font-weight : 800;
+    font-style : italic;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-Black.otf);
+    font-display : swap;
+    font-weight : 900;
+    font-style : normal;
+}
+
+@font-face {
+    font-family : Aileron;
+    src : url(/assets/fonts/aileron/Aileron-BlackItalic.otf);
+    font-display : swap;
+    font-weight : 900;
+    font-style : italic;
+}

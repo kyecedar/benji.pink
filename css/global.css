@@ -8,11 +8,23 @@
     --secondary : var(--col-dark);
     --mid       : var(--col-mid);
     --accent    : var(--col-accent);
+
+    --margins : 10px;
+    --corners : 3px;
+
+    /* https://stackoverflow.com/a/14068216 */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 html, body {
-    position : relative;
-    overflow : hidden;
+    position   : relative;
+    overflow-x : hidden;
 
     width      : 100vw;
     min-height : 100vh;
@@ -21,12 +33,46 @@ html, body {
     background : var(--primary);
 }
 
-main.container {
+body > .container {
     position : relative;
     display : flex;
     flex-direction : column;
     align-items : center;
 
     width  : 100vw;
-    height : 100vh;
+    min-height : 100vh;
+}
+
+main.content {
+    position : relative;
+    display : grid;
+    gap : var(--margins);
+    margin : var(--margins) 0;
+    grid-template-columns : repeat(3, 1fr);
+    grid-auto-rows        : calc((((100vh - var(--margins) * 4) / 3.5) - var(--margins)) / 2);
+
+    max-width  : calc(100vw - (var(--margins) * 2));
+    width      : 700px;
+    min-height : 100vh;
+}
+
+.window {
+    position   : relative;
+    box-sizing : border-box;
+
+    padding : var(--margins);
+    border  : 2px solid var(--mid);
+    border-top : calc(12px + 4px) solid var(--mid);
+}
+
+.window::after {
+    position : absolute;
+    top : -14px;
+    right : 0;
+    content : '';
+    width   : 12px;
+    height  : 12px;
+    mask-image         : url(/assets/images/windowclose.png);
+    -webkit-mask-image : url(/assets/images/windowclose.png);
+    background-color : var(--primary);
 }
