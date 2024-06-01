@@ -1,15 +1,138 @@
-h1 {
-    font-family : Bagnard;
-    font-size   : 32px;
+/* OPENER */
+article.opener {
+    grid-column : 1 / 3;
+    grid-row    : 1 / 3;
 }
 
-h3 {
+article.opener .heart {
+    position : absolute;
+
+    bottom : var(--margins);
+    right  : var(--margins);
+
+    width  : 28px;
+    height : 28px;
+
+    background-image : url(/assets/images/heart.png);
+    background-size  : 100%;
+}
+
+article.opener h1 {
+    font-family : Bagnard;
+    font-size   : 48px;
+}
+
+article.opener h3 {
     font-family : Aileron;
     font-size   : 16px;
     color : var(--mid);
 }
 
-article.opener {
+/* FASTLINKS */
+article.fastlinks {
+    grid-column : 3;
+    grid-row    : 1 / 5;
+
+    display : grid;
+    position : relative;
+
+    --icon-width  : 56px;
+    --icon-height : 68px;
+    
+    grid-template-columns : repeat(3, var(--icon-width));
+    grid-template-rows    : repeat(3, var(--icon-height));
+    
+    column-gap : calc((100% - (var(--icon-width) * 3)) / 2);
+    row-gap    : calc((100% - (var(--icon-height) * 3)) / 2);
+}
+
+article.fastlinks .icon {
+    --image : url();
+    --name  : '';
+
+    --width  : var(--icon-width);
+    --height : var(--icon-height);
+
+    position : relative;
+    display  : flex;
+    flex-direction : column;
+
+    width  : var(--width);
+    height : var(--height);
+}
+
+article.fastlinks .icon::before {
+    content : '';
+
+    background-image : var(--image);
+    background-size : 28px 28px;
+    background-position : center;
+    background-repeat : no-repeat;
+
+    width  : var(--icon-width);
+    height : var(--icon-width);
+}
+
+article.fastlinks .icon::after {
+    position : absolute;
+    left : 50%;
+    bottom : 0;
+    transform : translateX(-50%);
+    content : var(--name);
+    text-align : center;
+    color : var(--mid);
+    white-space : nowrap;
+}
+
+/* LATEST BLOG POST */
+article.latestblog {
+    position : relative;
+
     grid-column : 1 / 3;
-    grid-row    : 1 / 3;
+    grid-row    : 3 / 7;
+}
+
+article.latestblog .content {
+    overflow : hidden;
+
+    width  : 100%;
+    height : 100%;
+
+    color : var(--mid);
+    font-size : 12px;
+
+    text-align : justify;
+}
+
+article.latestblog h1,
+article.latestblog h2,
+article.latestblog h3,
+article.latestblog h4 {
+    font-family : Bagnard;
+}
+
+article.latestblog h1 {
+    font-size : 24px;
+}
+
+article.latestblog h2 {
+    font-size : 20px;
+}
+
+article.latestblog h3 {
+    font-size : 18px;
+}
+
+article.latestblog h4 {
+    font-size : 16px;
+}
+
+article.latestblog .timestamp {
+    font-size : 10px;
+    font-weight : 900;
+}
+
+article.latestblog .content div {
+    padding-top : var(--margins);
+    line-height : 16px;
 }
