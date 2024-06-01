@@ -51,7 +51,7 @@ main.content {
     gap : var(--margins);
     margin : var(--margins) 0;
     grid-template-columns : repeat(3, 1fr);
-    grid-auto-rows        : calc((((100vh - var(--margins) * 4) / 3.5) - var(--margins)) / 2);
+    grid-auto-rows        : minmax(56px, calc((((100vh - var(--margins) * 4) / 3.5) - var(--margins)) / 2));
 
     max-width  : calc(100vw - (var(--margins) * 2));
     width      : 700px;

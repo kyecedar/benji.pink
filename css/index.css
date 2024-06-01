@@ -136,3 +136,18 @@ article.latestblog .content div {
     padding-top : var(--margins);
     line-height : 16px;
 }
+
+article.latestblog .viewblog {
+    position : absolute;
+    bottom   : 0;
+    right    : 0; 
+    background : var(--primary);
+    padding : var(--margins);
+}
+
+article.latestblog .viewblog .text {
+    color : var(--primary);
+    text-decoration : underline;
+    background : var(--mid);
+    padding : var(--margins);
+}
