@@ -1,0 +1,10 @@
+section.desktop {
+    flex-grow : 1;
+    width : 100%;
+}
+
+section.taskbar {
+    width : 100%;
+    height : 28px;
+    background : var(--secondary);
+}

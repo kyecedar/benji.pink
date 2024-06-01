@@ -1,0 +1,32 @@
+:root {
+    --col-light  : #FFFFD1;
+    --col-mid    : #635C6D;
+    --col-dark   : #150413;
+    --col-accent : #FC4988;
+
+    --primary   : var(--col-light);
+    --secondary : var(--col-dark);
+    --mid       : var(--col-mid);
+    --accent    : var(--col-accent);
+}
+
+html, body {
+    position : relative;
+    overflow : hidden;
+
+    width      : 100vw;
+    min-height : 100vh;
+
+    color      : var(--secondary);
+    background : var(--primary);
+}
+
+main.container {
+    position : relative;
+    display : flex;
+    flex-direction : column;
+    align-items : center;
+
+    width  : 100vw;
+    height : 100vh;
+}
