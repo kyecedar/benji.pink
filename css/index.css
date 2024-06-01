@@ -149,9 +149,8 @@ article.latestblog .content div {
 article.latestblog .viewblog {
     position : absolute;
     bottom   : 0;
-    right    : 0; 
-    background : var(--primary);
-    padding : var(--margins);
+    right    : calc(100% + var(--margins));
+    white-space : nowrap;
 }
 
 article.latestblog .viewblog .text {
@@ -159,6 +158,14 @@ article.latestblog .viewblog .text {
     text-decoration : underline;
     background : var(--mid);
     padding : var(--margins);
+}
+
+@media screen and (max-width: 950px) {
+    article.latestblog .viewblog {
+        right      : 0; 
+        background : var(--primary);
+        padding    : var(--margins);
+    }
 }
 
 @media screen and (max-width: 595px) {
@@ -179,10 +186,6 @@ article.latestblog .viewblog .text {
         
         column-gap : calc((100% - (var(--icon-width) * 6)) / 5);
         row-gap    : calc((100% - (var(--icon-height) * 2)));
-    }
-
-    article.latestblog {
-        max-height : 400px;
     }
 
     article.latestblog .content {
