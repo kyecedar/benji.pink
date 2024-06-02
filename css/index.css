@@ -171,8 +171,26 @@ article.latestblog .viewblog .text {
     padding : var(--margins);
 }
 
-article.photobook .imageindex {
+/* NOTEPAD */
+article.notepad {
+    grid-column : 3;
+    grid-row    : 3 / 5;
+    color : var(--mid);
+}
 
+article.notepad a {
+    color : var(--accent);
+    text-decoration : underline;
+}
+
+/* PHOTOBOOK */
+article.photobook {
+    grid-column : 3;
+    grid-row    : 5 / 8;
+}
+
+article.photobook .imageindex {
+    color : var(--mid);
 }
 
 @media screen and (max-width: 950px) {
